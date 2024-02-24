@@ -21,4 +21,5 @@ exit:
 .section .data
     hello_str: .asciz "Hello, World!\n"
 
-; https://www.youtube.com/watch?v=Rpq5PDDgwxU
+# GNU Assembly
+# https://www.youtube.com/watch?v=Rpq5PDDgwxU

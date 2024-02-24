@@ -1,5 +1,5 @@
 
-TARGETS := 01-hello 02-hello
+TARGETS := 01-hello 02-hello 03-hello
 
 all: $(TARGETS)
 
@@ -11,6 +11,9 @@ all: $(TARGETS)
 	as -o $@ $<
 
 02-hello.o: 02-hello.s
+03-hello.o: 03-hello.s
+
+%.o: %.s
 	nasm -f elf64 -o $@ $<
 
 clean:
